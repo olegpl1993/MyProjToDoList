@@ -1,0 +1,106 @@
+@import url("nullstyle.css");
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+}
+
+.title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#toDoInput {
+  font-size: 18px;
+  height: 50px;
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+#buttonInput {
+  background-color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-weight: 700;
+  height: 25px;
+  width: 150px;
+  border: 1px solid black;
+  margin: 5px;
+  padding-top: 3px;
+  font-size: 15px;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 3px black;
+          box-shadow: 3px 3px 3px black;
+}
+
+#buttonInput:hover {
+  color: white;
+  background-color: black;
+}
+
+#buttonInput:active {
+  color: white;
+  background-color: black;
+  -webkit-box-shadow: 0px 0px 0px black;
+          box-shadow: 0px 0px 0px black;
+  -webkit-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+}
+
+.todosRow {
+  padding: 5px;
+  border: 1px solid black;
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.case {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+.buttonDone {
+  background-color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-weight: 700;
+  height: 25px;
+  min-width: 150px;
+  border: 1px solid black;
+  padding-top: 3px;
+  font-size: 15px;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 3px black;
+          box-shadow: 3px 3px 3px black;
+}
+
+.buttonDone:hover {
+  color: white;
+  background-color: black;
+}
+
+.buttonDone:active {
+  color: white;
+  background-color: black;
+  -webkit-box-shadow: 0px 0px 0px black;
+          box-shadow: 0px 0px 0px black;
+  -webkit-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+}
+
+.caseDone {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  color: #00af00;
+}
