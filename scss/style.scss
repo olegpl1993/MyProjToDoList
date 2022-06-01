@@ -24,31 +24,6 @@
     margin-top: 20px;
 }
 
-#buttonInput {
-    background-color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    font-weight: 700;
-    height: 25px;
-    width: 110px;
-    border: 1px solid black;
-    margin: 5px;
-    padding-top: 3px;
-    font-size: 15px;
-    border-radius: 5px;
-    box-shadow: 3px 3px 3px black;
-}
-#buttonInput:hover {
-    color: white;
-    background-color: black;
-}
-#buttonInput:active {
-    color: white;
-    background-color: black;
-    box-shadow: 0px 0px 0px black;
-    transform: translate(3px, 3px);
-}
-
 .todosRow {
     padding: 5px;
     border: 1px solid black;
@@ -64,7 +39,7 @@
     width: 870px;
 }
 
-.buttonDone {
+.buttonDone, .buttonDel, #buttonInput {
     background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -76,17 +51,26 @@
     font-size: 15px;
     border-radius: 5px;
     box-shadow: 3px 3px 3px black;
+    user-select: none;
 }
-.buttonDone:hover {
+.buttonDone:hover, .buttonDel:hover, #buttonInput:hover {
     color: white;
     background-color: black;
 }
-.buttonDone:active {
+.buttonDone:active, .buttonDel:active, #buttonInput:active {
     color: white;
     background-color: black;
     box-shadow: 0px 0px 0px black;
     transform: translate(3px, 3px);
 }
+.buttonDel {
+    min-width: 25px;
+    margin-left: 10px;
+}
+#buttonInput {
+    margin: 5px;
+}
+
 .caseDone {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
@@ -94,7 +78,7 @@
 }
 
 
-//----------------------------------------------------
+//------адаптив----------------------------------------
 @media (max-width: 999px) {
     .wrapper {
         width: 359px;
